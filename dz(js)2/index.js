@@ -51,3 +51,43 @@ if( p > 0 ){
 else{
     alert("Введите число!")
 }
+
+// task 4
+let arr = ["Apple", "Car", "Home", "Mondey", "Table"];
+let lenght = arr.length
+for(i = 0; i < lenght; i++) {
+    console.log(arr[i]);
+}
+// task 5
+
+let arrr = ["Apple", "Car", "Home", "Mondey", "Table"];
+let newArr = arrr.splice(
+    prompt("выберите от 0 до 5, какой элемент будет удален"),
+    1  
+);
+console.log(arrr)
+console.log(newArr)
+
+// task 6
+let i = 0;
+while (i < 10) {
+  i++;
+  if (i == 5) continue ;
+  console.log(i)
+}
+
+
+let i = 10
+do{   
+    console.log(i)
+    i--
+    if(i == 5) break; 
+
+}while(i < 10)
+
+// task 7
+
+
+
+
+
