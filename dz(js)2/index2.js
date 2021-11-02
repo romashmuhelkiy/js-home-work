@@ -1,25 +1,25 @@
 
 function game(){
-let min = parseInt(prompt("задайте минимально число от 0 до 10!"));
-let max = parseInt(prompt("Задайте максимальное число от 11 до 20!!")); 
-if(min < 10 && max < 20 && max > 10 ){
-  var random = Math.floor(Math.random() * (max - min + 1)) + min;
- 
+let range_from = parseInt(prompt("задайте минимально число от 0 !"));
+let range_to = parseInt(prompt("Задайте максимальное число не больше 10 от первого !!")); 
+if( range_from + 11 > range_to){
+  var random = Math.floor(Math.random() * (range_from - range_to) + range_to);;
+  console.log(random);
 }
 else{
   alert("что-то пошло не так...");
-  
 }
-console.log(random);
 
 
 let life = 4;
-
 while((life > 0) && (namber !== random)){
   var namber =  +prompt("Угадайте число в заданом диапазоне")
-if (namber !== random ){
+if(namber == 0){
+  break;
+}
+if(namber !== random ){
   life --
-  alert("Попробуйте еще раз, у вас осталось" + " " + life + " " + "жизней")
+  alert(" У вас осталось" + " " + life + " " + "жизней")
 } 
 }
  
@@ -29,4 +29,5 @@ if (namber == random && namber > 0) { alert("Молодец, ты выиграл
   
   }
 
-}
+ }   
+ 

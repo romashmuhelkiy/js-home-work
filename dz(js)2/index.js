@@ -84,8 +84,16 @@ do{
     if(i == 5) break; 
 
 }while(i < 10)
-
 // task 7
+function type(Number, String, Boolean, Object,Undefined, a = null){
+    console.log(typeof(Number))
+    console.log(typeof(String))
+    console.log(typeof(Boolean))
+    console.log(typeof(Object))
+    console.log(typeof(Undefined))
+    console.log((a))   
+}  
+type(1, "Roma", true,[], )
 
 
 
